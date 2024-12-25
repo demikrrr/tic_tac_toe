@@ -1,0 +1,17 @@
+.tic-tac-toe {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 0;
+}
+
+.tic-tac-toe div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  border: 1px solid #000;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+}
