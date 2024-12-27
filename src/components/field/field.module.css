@@ -5,7 +5,7 @@
   gap: 0;
 }
 
-.field div {
+.cell {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,4 +14,8 @@
   background-color: #fff;
   width: 100px;
   height: 100px;
+}
+
+.cell:hover {
+  background-color: #ffffe0;
 }
