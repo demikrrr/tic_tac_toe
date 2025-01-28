@@ -1,12 +1,11 @@
 import styles from './field.module.css';
-import { field } from '../../constants';
 
-export const FieldLayout = () => {
+export const FieldLayout = ({ field, handleCellClick }) => {
   return (
     <>
       <div className={styles.field}>
         {field.map((index) => (
-          <button key={index} className={styles.cell}></button>
+          <button key={index} className={styles.cell} onClick={handleCellClick}></button>
         ))}
       </div>
     </>
