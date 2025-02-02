@@ -17,4 +17,7 @@ export const ACTION = {
 export const PLAYER_NAME = {
   [PLAYER.cross]: '╳',
   [PLAYER.nought]: '◯',
+  [PLAYER.nobody]: '',
 };
+
+export const createEmptyField = new Array(9).fill(PLAYER_NAME[PLAYER.nobody]);
