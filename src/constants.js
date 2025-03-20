@@ -20,4 +20,4 @@ export const PLAYER_NAME = {
   [PLAYER.nobody]: '',
 };
 
-export const createEmptyField = new Array(9).fill(PLAYER_NAME[PLAYER.nobody]);
+export const createEmptyField = new Array(9).fill(PLAYER.nobody);

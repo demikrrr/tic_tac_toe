@@ -1,0 +1,41 @@
+[33mcommit fe005df2228163c3444adbcb6407f9ee07e8eeec[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Denis Krayushkin <dkrayushkin@gmail.com>
+Date:   Sun Feb 2 23:09:03 2025 +0300
+
+    test6
+
+[33mcommit cc7a260e197cc6fb1a614fb8f6fd24a97d853905[m
+Author: Denis Krayushkinn <dkrayushkin@gmail.com>
+Date:   Tue Jan 28 16:42:39 2025 +0300
+
+    test5
+
+[33mcommit 20ffaabe97ae5f59e5a0348d838bef01b0789a5a[m
+Author: Denis Krayushkinn <dkrayushkin@gmail.com>
+Date:   Mon Jan 27 16:46:26 2025 +0300
+
+    test4
+
+[33mcommit f5fab28a0958fffd6c1e0e31a7f7e09218e848cd[m
+Author: Denis Krayushkinn <dkrayushkin@gmail.com>
+Date:   Fri Dec 27 16:51:11 2024 +0300
+
+    test2
+
+[33mcommit 5bde7a04e27cfe2efa2ff1d2a6a1b8a909935635[m
+Author: Denis Krayushkinn <dkrayushkin@gmail.com>
+Date:   Thu Dec 26 16:47:06 2024 +0300
+
+    test1
+
+[33mcommit 7488d01b8cc0b34217396fd4ecb6476079cde538[m
+Author: Denis Krayushkinn <dkrayushkin@gmail.com>
+Date:   Wed Dec 25 16:43:06 2024 +0300
+
+    add layout
+
+[33mcommit 3e093e780347c7705224ce8cddcf7abc794aa7b6[m
+Author: Denis Krayushkinn <dkrayushkin@gmail.com>
+Date:   Tue Dec 24 16:39:14 2024 +0300
+
+    init_sample
