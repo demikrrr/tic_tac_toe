@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { GameLayout } from './game-layout.jsx';
-import { createEmptyField, STATUS, PLAYER } from './constants.js';
+import { createEmptyField, STATUS, PLAYER, WIN_PATTERNS } from './constants.js';
 // import { handleCellClick } from './functions.js';
 
 export const Game = () => {
@@ -10,15 +10,31 @@ export const Game = () => {
   const [field, setField] = useState(createEmptyField);
 
   const handleCellClick = (index) => {
-    if (status === STATUS.WIN || field[index] !== PLAYER.nobody) {
+    if (
+      status === STATUS.win ||
+      status === STATUS.draw ||
+      field[index] !== PLAYER.nobody
+    ) {
       return;
     }
 
     const newField = [...field];
     newField[index] = currentPlayer;
     setField(newField);
-    setCurrentPlayer(currentPlayer === PLAYER.cross ? PLAYER.nought : PLAYER.cross);
+
+    if (checkWin(newField, currentPlayer)) {
+      setStatus(STATUS.win);
+    } else if (
+      (newfield) => newfield.some((currentValue) => currentValue === PLAYER.nobody)
+    ) {
+      setCurrentPlayer(currentPlayer === PLAYER.cross ? PLAYER.nought : PLAYER.cross);
+    }
   };
+
+  const checkWin = (field, currentPlayer) =>
+    WIN_PATTERNS.some((winPattern) =>
+      winPattern.every((index) => field[index] === currentPlayer),
+    );
 
   return (
     <GameLayout
