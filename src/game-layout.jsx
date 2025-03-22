@@ -2,6 +2,8 @@ import React from 'react';
 import { Field } from './components/field/field';
 import { Information } from './components/Information/information';
 import styles from './game.module.css';
+import PropTypes from 'prop-types';
+import { PLAYER, STATUS } from './constants';
 
 export const GameLayout = ({
   field,
@@ -20,4 +22,12 @@ export const GameLayout = ({
       </div>
     </>
   );
+};
+
+GameLayout.propTypes = {
+  field: PropTypes.arrayOf(PropTypes.oneOf([PLAYER.cross, PLAYER.nobody, PLAYER.nought])),
+  handleCellClick: PropTypes.func,
+  restartGame: PropTypes.func,
+  status: PropTypes.oneOf([STATUS.draw, STATUS.move, STATUS.win]),
+  currentPlayer: PropTypes.oneOf([PLAYER.cross, PLAYER.nobody, PLAYER.nought]),
 };

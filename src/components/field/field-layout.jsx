@@ -1,5 +1,6 @@
 import styles from './field.module.css';
-import {PLAYER_NAME} from '../../constants'
+import { PLAYER, PLAYER_NAME } from '../../constants';
+import PropTypes from 'prop-types';
 
 export const FieldLayout = ({ field, handleCellClick }) => {
   return (
@@ -17,4 +18,9 @@ export const FieldLayout = ({ field, handleCellClick }) => {
       </div>
     </>
   );
+};
+
+FieldLayout.propTypes = {
+  field: PropTypes.arrayOf(PropTypes.oneOf([PLAYER.cross, PLAYER.nobody, PLAYER.nought])),
+  handleCellClick: PropTypes.func,
 };
