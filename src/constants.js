@@ -21,8 +21,6 @@ export const PLAYER_NAME = {
   [PLAYER.nobody]: '',
 };
 
-export const createEmptyField = new Array(9).fill(PLAYER.nobody);
-
 export const WIN_PATTERNS = [
   [0, 1, 2],
   [3, 4, 5],
